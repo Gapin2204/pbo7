@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/stylesprofile.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><p><%= user.name %></p></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><p><%= user.email %></p></td>
+            </tr>
+            <tr>
+                <td><label for="address">Alamat:</label></td>
+                <td><p><%= user.address %></p></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td><p><%= user.gender %></p></td>
+            </tr>
+            <tr>
+                <td><label for="phone">No. Telepon:</label></td>
+                <td><p><%= user.phone %></p></td>
+            </tr>
+        </table>
+        <a href="/auth/profile/edit-profile"><button>Edit Profile</button></a>
+        <a href="/auth/logout"><button>Logout</button></a>
+    </div>
+</body>
+</html>

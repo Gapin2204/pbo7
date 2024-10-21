@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/styleseditprofile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form action="/auth/profile/edit-profile" method="POST">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" value="<%= user.username %>" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" value="<%= user.email %>" required>
+            </div>
+            <div>
+                <label for="addres">Alamat</label>
+                <input type="text" name="addres" value="<%= user.addres %>" required>
+            </div>
+            <div>
+                <label for="gender">Jenis Kelamin</label>
+                <select name="gender" required>
+                    <option value="">Pilih</option>
+                    <option value="Laki-laki" <% if (user.gender === 'Laki-laki') { %>selected<% } %>>Laki-laki</option>
+                    <option value="Perempuan" <% if (user.gender === 'Perempuan') { %>selected<% } %>>Perempuan</option>
+                </select>
+            </div>
+            <div>
+                <label for="phone">No. Telepon</label>
+                <input type="text" name="phone" value="<%= user.phone %>" required>
+            </div>
+            <button type="submit">Save Changes</button>
+            <a href="/auth/profile" class="back-to-profile">Back to Profile</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: 'Montserrat', sans-serif; /* Font ramping dan modern */
+    background: linear-gradient(135deg, #2e2f4f, #5c67f2); /* Gradien yang lebih bold dan futuristik */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #1e1f3d; /* Warna gelap untuk kontainer */
+    padding: 2.5rem;
+    border-radius: 15px; /* Sudut lebih membulat */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Shadow lebih dalam untuk dimensi */
+    width: 400px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Efek transisi halus */
+}
+
+.container:hover {
+    transform: translateY(-8px); /* Sedikit lebih tinggi saat hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Shadow lebih besar saat hover */
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700; /* Tebal dan jelas */
+    letter-spacing: 1.5px; /* Spasi untuk tampilan modern */
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: transparent; /* Efek teks gradien */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input container */
+div {
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #b3b3b3;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background: #2e2f4f; /* Latar belakang input gelap */
+    color: #e0e0e0;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    background-color: #3c3f67; /* Warna latar saat fokus */
+    outline: none;
+    box-shadow: 0 0 10px #5c67f2; /* Glow fokus */
+}
+
+/* Button styling */
+button {
+    background-color: #e52e71; /* Warna tombol cerah untuk kontras */
+    color: white;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px; /* Spasi untuk efek futuristik */
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #d4246c;
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+/* Link styling */
+.back-to-profile {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #5c67f2; /* Warna tautan yang selaras */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-to-profile:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

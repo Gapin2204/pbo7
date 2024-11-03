@@ -1,0 +1,138 @@
+/* Global Styles for Register Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #3b3b4f); /* Gradien gelap yang futuristik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e0e0; /* Teks terang untuk kontras */
+}
+
+.container {
+    background-color: #2b2b3d;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3); /* Shadow lebih dalam untuk efek mengambang */
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Border halus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4); /* Shadow lebih kuat saat hover */
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff9d00, #ff3d71);
+    color: transparent; /* Teks gradien */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+input::placeholder {
+    color: #bbb; /* Placeholder dengan warna kontras rendah */
+}
+
+input:focus {
+    border-color: #ff9d00; /* Warna hangat saat fokus */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparansi berkurang saat fokus */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff3d71; /* Warna tombol cerah */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d83360; /* Warna lebih gelap saat hover */
+    transform: translateY(-3px);
+}
+
+/* Links */
+a {
+    color: #ff3d71;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Spacing */
+form {
+    margin-top: 25px;
+}
+
+p {
+    margin-top: 20px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Responsive Design for Register Page */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

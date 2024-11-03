@@ -1,0 +1,125 @@
+/* Global Styles for Profile Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace; /* Monospace yang ramping dan modern */
+    background: linear-gradient(135deg, #1e1f3d, #4b5c6b); /* Gradien gelap yang futuristik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e0e0; /* Teks yang lebih terang untuk kontras */
+}
+
+.container {
+    background-color: #2a2b4e; /* Warna latar belakang gelap */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4); /* Shadow lebih dalam untuk efek 3D */
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #555; /* Border gelap untuk tampilan modern */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover halus */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efek mengangkat saat hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Shadow lebih kuat saat hover */
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff8a00, #ff3d71);
+    color: transparent; /* Efek teks gradien */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-bottom: 25px;
+    border-spacing: 0 15px;
+}
+
+table td {
+    padding: 15px 20px;
+    color: #e0e0e0;
+    font-size: 18px;
+    background-color: #33324d; /* Background gelap untuk baris */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow pada baris untuk kedalaman */
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #bbb;
+}
+
+p {
+    color: #a0a0a0;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff3d71; /* Warna cerah untuk tombol */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d8365c;
+    transform: translateY(-3px); /* Tombol terangkat saat hover */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a button {
+    width: 45%;
+    margin: 10px 2.5%;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
